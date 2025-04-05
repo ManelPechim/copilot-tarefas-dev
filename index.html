@@ -1,92 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas Dev</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>📝 Tarefas Dev</h1>
-            <div class="theme-toggle">🌙</div>
-        </header>
-        
-        <div class="main-content">
-            <div class="add-task-section">
-                <h2>Add nova tarefa</h2>
-                <form id="taskForm">
-                    <div class="form-group">
-                        <label for="taskTitle">Tarefa</label>
-                        <input type="text" id="taskTitle" placeholder="O que precisa ser feito?" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="taskDescription">Descrição</label>
-                        <textarea id="taskDescription" placeholder="Add detalhs sobre a tarefa..." required></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="taskCategory">Categoria</label>
-                        <select id="taskCategory" required>
-                            <option value="Feature Development">Desenvolvimento de Feature</option>
-                            <option value="Bug Fix">Bug Fix</option>
-                            <option value="Documentation">Documentação</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="taskPriority">Prioridade</label>
-                        <select id="taskPriority" required>
-                            <option value="Low">Baixa</option>
-                            <option value="Medium">Média</option>
-                            <option value="High">Alta</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="taskDueDate">Data de Entrega</label>
-                        <input type="date" id="taskDueDate" required>
-                    </div>
-                    
-                    <button type="submit" class="add-task-btn">+ Add Tarefa</button>
-                </form>
-            </div>
-
-            <div class="tasks-section">
-                <h2>Suas Tarefas</h2>
-                <div class="task-filters">
-                    <div class="filter-group">
-                        <label>Categoria:</label>
-                        <select id="categoryFilter">
-                            <option value="All">Todas</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label>Prioridade:</label>
-                        <select id="priorityFilter">
-                            <option value="All">Todas</option>
-                        </select>
-                    </div>
+    <header>
+        <h1>📝 Tarefas Dev</h1>
+        <div class="theme-toggle" role="button" aria-label="Alternar tema">🌙</div>
+    </header>
+    <div class="main-content">
+        <div class="add-task-section">
+            <h2>Add nova tarefa</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="taskTitle">Título</label>
+                    <input type="text" id="taskTitle" required>
                 </div>
-                <div id="tasksList"></div>
-            </div>
+                
+                <div class="form-group">
+                    <label for="taskDescription">Descrição</label>
+                    <textarea id="taskDescription" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskCategory">Categoria</label>
+                    <select id="taskCategory" required>
+                        <option value="Feature Development">Desenvolvimento de Feature</option>
+                        <option value="Bug Fix">Bug Fix</option>
+                        <option value="Documentation">Documentação</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskPriority">Prioridade</label>
+                    <select id="taskPriority" required>
+                        <option value="Low">Baixa</option>
+                        <option value="Medium">Média</option>
+                        <option value="High">Alta</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskDueDate">Data de Entrega</label>
+                    <input type="date" id="taskDueDate" required>
+                </div>
+                
+                <button type="submit" class="add-task-btn">Adicionar Tarefa</button>
+            </form>
         </div>
 
-        <div class="stats">
-            <div class="stat-card">
-                <span class="stat-number" id="activeTasks">2</span>
-                <span class="stat-label">Tarefas Ativas</span>
+        <div class="tasks-section">
+            <h2>Suas Tarefas</h2>
+            <div class="task-filters">
+                <div class="filter-group">
+                    <label>Categoria:</label>
+                    <select id="categoryFilter">
+                        <option value="All">Todas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Prioridade:</label>
+                    <select id="priorityFilter">
+                        <option value="All">Todas</option>
+                    </select>
+                </div>
             </div>
-            <div class="stat-card">
-                <span class="stat-number" id="completedTasks">1</span>
-                <span class="stat-label">Completas</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" id="highPriorityTasks">1</span>
-                <span class="stat-label">Prioridade alta</span>
-            </div>
+            
+            <div id="tasksList"></div>
+
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <span class="stat-number" id="activeTasks">2</span>
+            <span class="stat-label">Tarefas Ativas</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="completedTasks">1</span>
+            <span class="stat-label">Completas</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="highPriorityTasks">1</span>
+            <span class="stat-label">Prioridade alta</span>
         </div>
     </div>
     <script src="script.js"></script>

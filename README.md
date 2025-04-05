@@ -1,23 +1,59 @@
-# GitHub Copilot Workshop
+# 📝 Tarefas Dev - Gerenciador de Tarefas
 
-## Pra começar:
-1. De fork nesse [repo](https://github.com/pachicodes/dev-task-tracker/tree/main)
-2. clone o repo na sua máquina
+Um aplicativo web moderno para gerenciamento de tarefas de desenvolvimento, com tema escuro e interface intuitiva.
 
+## 🚀 Funcionalidades
+
+- ✨ Criar, editar e excluir tarefas
+- 🌓 Tema escuro/claro integrado
+- 🎯 Priorização de tarefas
+- 📋 Categorização por tipo de desenvolvimento
+- 💾 Dados salvos localmente
+- 📱 Design responsivo
+
+## 🛠️ Tecnologias
+
+- HTML5
+- CSS3 (Flexbox, CSS Variables)
+- JavaScript (ES6+, Classes)
+- LocalStorage API
+
+## 📦 Instalação
+
+1. Clone o repositório:
 ```bash
-git clone <your-forked-repo-url>
+git clone https://github.com/seu-usuario/tarefas-dev.git
 ```
-3. troque para o branch `start-state` 
 
-```bash
-git switch start-state
-```
-4. abra o projecto no seu editor de código e abra `index.html` no seu navegador
+2. Abra o arquivo `index.html` no navegador ou use Live Server no VS Code
 
-Você pode usar [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) no Vs Code pra abrir o htmlo no navegador
+## 💡 Recursos
 
-## Live Demo prompts
+### Gerenciamento de Tarefas
+- Adicionar/Editar/Excluir tarefas
+- Definir prioridades (Baixa, Média, Alta)
+- Categorizar por tipo (Feature, Bug Fix, Documentação)
 
-Para aprender a usar o GitHub Copilot vamos completar uma série de tarefas para melhorar esse projeto
+### Interface
+- Alternância entre tema claro/escuro
+- Design moderno com tons de azul pastel
+- Botões com feedback visual
+- Responsivo para todos os dispositivos
 
-Vamos usar o arquivo [workshop-prompts](https://github.com/pachicodes/copilot-tarefas-dev/blob/main/prompts.md) pra começar
+## 📸 Screenshots
+
+[Adicione suas screenshots aqui]
+
+## 👤 Autor
+
+Seu Nome
+- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+- LinkedIn: [seu-linkedin](https://linkedin.com/in/seu-linkedin)
+
+## 📝 Licença
+
+Este projeto está sob a licença [MIT](./LICENSE).
+
+---
+
+⭐ Se este projeto te ajudou, considere dar uma estrela!
